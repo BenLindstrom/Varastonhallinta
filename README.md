@@ -1,2 +1,2 @@
-# Varastonhallinta
-Kouluprojekti varastonhallinta järjestelmä
+# Bootstrap Studio -tiedostoja
+Verkkokäyttiksen suunnittelua varten.
