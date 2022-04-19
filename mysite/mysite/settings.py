@@ -75,14 +75,17 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "mssql",
-        "NAME": "SampleDB",
-        "HOST": ".\SQLEXPRESS",
-        "PORT": "1433",
-        "OPTIONS": {"driver": "ODBC Driver 17 for SQL Server", 
-        },
-    },
+		'default': {
+		'ENGINE': 'sql_server.pyodbc',
+		'HOST': '.\SQLEXPRESS',
+		'PORT': '1433',
+		'NAME': 'SampleDB',
+		'USER': '',
+		'PASSWORD': '',
+		'OPTIONS': {
+		    'driver': 'ODBC Driver 17 for SQL Server',
+		},
+	},
 }
 
 
