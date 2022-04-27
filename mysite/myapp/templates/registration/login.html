@@ -1,38 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load  static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>kirjautumisruutu</title>
+    <link rel="stylesheet" href="{%static 'registration/assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans&amp;display=swap">
+    <link rel="stylesheet" href="{%static 'registration/assets/css/Login-Form-Dark.css' %} ">
+    <link rel="stylesheet" href="{%static 'registration/assets/css/styles.css' %}">
+</head>
 
 
-{% block content %}
+<body style="background: linear-gradient(144deg, #1b3259 0%, #df2070 64%, white 100%);background-repeat: no-repeat;background-attachment: fixed;">
+    <section class="login-dark">
+        <form method="post" style="background: rgba(27,50,89,0.63);">
+            {% csrf_token %}
+            <div class="illustration"><img src="{%static 'registration/assets/img/clipboard-image-1.png' %}" style="height: 277px;"></div>
+            <div class="mb-3"><input class="form-control" type="text" name="username" placeholder="Käyttäjänimi" autofocus="" style="border-color: #0095b2;font-family: 'Nunito Sans', sans-serif;"></div>
+            <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Salasana" style="border-color: #0095b2;font-family: 'Nunito Sans', sans-serif;"></div>
+            <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit" style="--bs-primary-rgb: 223,32,112;background: #df2070;font-family: 'Nunito Sans', sans-serif;">Kirjaudu</button></div><a class="forgot" href="#" style="font-family: 'Nunito Sans', sans-serif;color:  #efefef;">Pyydä uutta salasanaa.</a>
+        </form>
+    </section>
+    <script src="{%static 'registration/assets/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
 
-{% if form.errors %}
-<p>Your username and password didn't match. Please try again.</p>
-{% endif %}
-
-{% if next %}
-    {% if user.is_authenticated %}
-    <p>Your account doesn't have access to this page. To proceed,
-    please login with an account that has access.</p>
-    {% else %}
-    <p>Please login to see this page.</p>
-    {% endif %}
-{% endif %}
-
-<form method="post" action="{% url 'login' %}">
-{% csrf_token %}
-<table>
-<tr>
-    <td>{{ form.username.label_tag }}</td>
-    <td>{{ form.username }}</td>
-</tr>
-<tr>
-    <td>{{ form.password.label_tag }}</td>
-    <td>{{ form.password }}</td>
-</tr>
-</table>
-
-<input type="submit" value="login">
-<input type="hidden" name="next" value="{{ next }}">
-</form>
-
-{# Assumes you set up the password_reset view in your URLconf #}
-<p><a href="{% url 'password_reset' %}">Lost password?</a></p>
-
-{% endblock %}
+</html>

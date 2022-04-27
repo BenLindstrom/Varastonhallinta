@@ -1,0 +1,9 @@
+.form-control::placeholder {
+  color: #efefef;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #efefef;
+}
+
