@@ -22,6 +22,7 @@ import myapp.urls
 
 urlpatterns = [
     path('', include(myapp.urls)),
+    path('lainaus/', include(myapp.urls)),
     path("tili/", include(django.contrib.auth.urls)),
     path('admin/', admin.site.urls),
     

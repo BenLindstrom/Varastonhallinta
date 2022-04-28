@@ -10,6 +10,7 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'myapp/etusivu.html')
 
-
+def lainaus(request):
+    return render(request, 'borrowing/lainaus.html')
 
 
