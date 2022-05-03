@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Etusivu</title>
+    <title>Palautus</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit:400,800&amp;display=swap">
@@ -38,17 +38,16 @@
         <div class="container hero">
             <div class="row">
                 <div class="col-md-8 offset-md-2" style="padding-top: 10px;font-family: 'Nunito Sans', sans-serif;color: rgb(255,255,255);">
-                    <h1 class="text-center" style="font-family: Kanit, sans-serif;font-weight: bold;">Tervetuloa Rasekon Lainaamoon</h1>
-                    <h1 class="fw-bold" style="font-size: 25px;font-family: 'Nunito Sans', sans-serif;margin: 20px 0px ;">Ohjeet Lainaamon käyttöön</h1>
-                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;"><strong>Uusi lainaus</strong>&nbsp;- Aloita uuden uloslainauksen kirjaus.</p>
-                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;"><strong>Palautus</strong>&nbsp;- Kirjaa lainassa ollut tuote palautetuksi.</p>
-                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;"><strong>Työkalut</strong>&nbsp;:<br></p>
-                    <ul style="color: rgb(255,255,255);">
-                        <li><strong>Listaa tuote varastoon</strong>&nbsp;- Lisää uusi tuote varastokirjanpitoon.</li>
-                        <li><strong>Tarkista lainaus</strong>&nbsp;- Katso tietyllä opiskelijanumerolla lainattujen tuotteiden tila.</li>
-                        <li><strong>Ylläpito</strong> - Korjaa virheellisiä merkintöjä ja muokkaa varastossa olevia tuotteita.<br></li>
-                    </ul>
-                    <p><strong>Tuotelista</strong>&nbsp;- Avaa lista kaikista varaston tuotteista.<br><br>&nbsp; &nbsp; Voit myös hakea tuotetta suoraan nimellä.</p>
+                    <h1 class="fw-bold" style="font-size: 25px;font-family: 'Nunito Sans', sans-serif;margin: 20px 0px ;">Palautus</h1>
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Tuotekoodi</strong>&nbsp;- Lue viivakoodista tai kirjaa se käsin. Voit myös määritellä lukumäärän.</p><input type="text" style="margin-bottom: 20px;width: 243px;"><input type="text" style="margin-left: 16px;width: 58px;padding-left: 4px;" placeholder="Määrä"><button class="btn btn-primary" type="button" style="background: #1b3259;margin-left: 25px;margin-bottom: 4px;height: 33px;padding-top: 4px;">Lisää</button>
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Tuotenimi</strong>&nbsp;- Täyttyy tuotekoodista.</p><input type="text" style="width: 405px;margin-bottom: 20px;" disabled="" readonly=""><img class="tuotekuva">
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Tuotelista</strong>&nbsp;- Palautettavat tuotteet.</p><textarea style="width: 405px;margin-bottom: 20px;" disabled="" readonly=""></textarea>
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Opiskelijanumero</strong>&nbsp;- Lue opiskelijakortti tai kirjaa käsin.</p><input type="text" style="margin-bottom: 20px;width: 243px;">
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Etunimi</strong></p><input type="text" style="margin-bottom: 20px;width: 243px;" disabled="" readonly="">
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Sukunimi</strong></p><input type="text" style="margin-bottom: 20px;width: 243px;" disabled="" readonly="">
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Lisätietoja</strong>&nbsp;- Vapaamuotoinen.</p><textarea style="width: 405px;height: 100px;"></textarea>
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;">Tarkista tietojen oikeellisuus ja paina sitten "Kirjaa".<br>Kuitti voidaan tulostaa onnistuneen kirjauksen jälkeen.</p>
+                    <p><button class="btn btn-primary" type="button" style="background: #df2070;">Kirjaa</button><button class="btn btn-primary disabled" type="button" style="background: #df2070;margin-left: 50px;" disabled="">Tulosta kuitti</button></p>
                 </div>
             </div>
         </div>

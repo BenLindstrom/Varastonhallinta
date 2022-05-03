@@ -1,0 +1,64 @@
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Ylläpito - korjaa laina</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit:400,800&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600&amp;display=swap">
+
+    <link rel="stylesheet" href="{%static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{%static 'assets/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{%static 'assets/css/Header-Dark.css' %}">
+    <link rel="stylesheet" href="{%static 'assets/css/styles.css' %}">
+</head>
+
+<body style="background: linear-gradient(144deg, #1b3259, #df2070), #1b3259;background-repeat: no-repeat;background-attachment: fixed;">
+    <header class="header-dark">
+        <nav class="navbar navbar-dark navbar-expand-lg navigation-clean-search">
+            <div class="container"><a class="navbar-brand" style="font-size: 35px;font-family: Kanit, sans-serif;color: rgb(223,32,112);" href="/">Lainaamo</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="/lainaus" style="font-family: 'Nunito Sans', sans-serif;">Uusi lainaus</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/palautus" style="font-family: 'Nunito Sans', sans-serif;">Palautus</a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="font-family: 'Nunito Sans', sans-serif;">Työkalut&nbsp;</a>
+                            <div class="dropdown-menu shadow-none" style="background: rgba(255,255,255,0);border-style: none;"><a class="dropdown-item border rounded border-dark shadow-lg" href="/uusituote" style="color: rgb(252,254,255);--bs-info: #0095b2;--bs-info-rgb: 0,149,178;background: #df2070;font-family: 'Nunito Sans', sans-serif;">Listaa tuote varastoon</a><a class="dropdown-item border rounded border-dark shadow-lg" href="/lainantarkistus" style="color: rgb(252,254,255);--bs-info: #0095b2;--bs-info-rgb: 0,149,178;background: #df2070;font-family: 'Nunito Sans', sans-serif;">Tarkista lainaus</a><a class="dropdown-item border rounded border-dark shadow-lg" href="/yllapito" style="color: rgb(252,254,255);--bs-info: #f2f2f2;--bs-info-rgb: 242,242,242;background: #df2070;font-family: 'Nunito Sans', sans-serif;">Ylläpito</a></div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/tuotelista" style="font-family: 'Nunito Sans', sans-serif;">Tuotelista</a></li>
+                    </ul>
+                    <form class="me-auto" target="_self">
+                        <div class="d-flex align-items-center"><label class="form-label d-flex mb-0" for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" id="search-field" name="search" placeholder="Etsi tuotetta nimellä" style="font-family: 'Nunito Sans', sans-serif;width: 196.688px;"></div>
+                    </form><a class="btn btn-light action-button" role="button" href="{% url 'logout' %}" style="background: #df2070;font-family: 'Nunito Sans', sans-serif;">Kirjaudu ulos</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container hero">
+            <div class="row">
+                <div class="col-md-8 offset-md-2" style="padding-top: 10px;font-family: 'Nunito Sans', sans-serif;color: rgb(255,255,255);">
+                    <h1 class="fw-bold" style="font-size: 25px;font-family: 'Nunito Sans', sans-serif;margin: 20px 0px ;">Lainaustietojen korjaus</h1>
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Varasto</strong>&nbsp;- Valitse haluttu varasto listasta.</p>
+                    <div class="dropdown"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="background: #df2070;margin-bottom: 20px;height: 36px;">Varasto&nbsp;</button>
+                        <div class="dropdown-menu" style="margin-top: -17px;"><a class="dropdown-item" href="#">Varasto A</a><a class="dropdown-item" href="#">Varasto B<br></a><a class="dropdown-item" href="#">Varasto C<br></a><a class="dropdown-item" href="#">Varasto D<br></a></div>
+                    </div>
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Opiskelijanumero</strong>&nbsp;- Lue opiskelijakortti tai kirjaa käsin.</p><input type="text" style="margin-bottom: 20px;width: 243px;">
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Etunimi</strong></p><input type="text" style="margin-bottom: 20px;width: 243px;" disabled="" readonly="">
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Sukunimi</strong></p><input type="text" style="margin-bottom: 20px;width: 243px;" disabled="" readonly="">
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Tuotekoodi</strong>&nbsp;- Lue viivakoodista tai kirjaa se käsin. Voit myös määritellä lukumäärän.</p><input type="text" style="margin-bottom: 20px;width: 243px;"><input type="text" style="margin-left: 16px;width: 58px;padding-left: 4px;" placeholder="Määrä"><button class="btn btn-primary" type="button" style="background: #1b3259;margin-left: 25px;margin-bottom: 4px;height: 33px;padding-top: 4px;">Lisää</button><button class="btn btn-primary" type="button" style="background: #1b3259;margin-left: 25px;margin-bottom: 4px;height: 33px;padding-top: 4px;">Poista</button>
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Tuotenimi</strong>&nbsp;- Täyttyy tuotekoodista.</p><input type="text" style="width: 405px;margin-bottom: 20px;" disabled="" readonly=""><img class="tuotekuva">
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Tuotelista</strong>&nbsp;- Lainattavaksi otettavat tuotteet.</p><textarea style="width: 405px;margin-bottom: 20px;" disabled="" readonly=""></textarea>
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Lainauspäivä</strong>&nbsp;- Jos tarve muuttaa.</p><input type="date" style="margin-bottom: 20px;">
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Palautuspäivä</strong></p><input type="date" style="margin-bottom: 20px;">
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Lisätietoja</strong>&nbsp;- Vapaamuotoinen.</p><textarea style="width: 405px;height: 100px;"></textarea>
+                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;">Tarkista tietojen oikeellisuus ja paina sitten "Kirjaa".<br>Kuitti voidaan tulostaa onnistuneen kirjauksen jälkeen.<br></p>
+                    <p><button class="btn btn-primary" type="button" style="background: #df2070;">Kirjaa</button><button class="btn btn-primary disabled" type="button" style="background: #df2070;margin-left: 50px;" disabled="">Tulosta kuitti</button></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="{%static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>
