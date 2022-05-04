@@ -2,7 +2,7 @@
 {% load  static %}
 {% block title %}Tuotelista{% endblock %}
 {% block prodliststyle %}<link rel="stylesheet" href="{%static 'assets/css/Animated-Pretty-Product-List-v12.css' %}">{% endblock %}
-<div class="container hero">{% block content %}
+{% block content %}
     <div class="row">
         <div class="col-md-8 offset-md-2" style="padding-top: 10px;font-family: 'Nunito Sans', sans-serif;color: rgb(255,255,255);">
             <h1 class="fw-bold" style="font-size: 25px;font-family: 'Nunito Sans', sans-serif;margin: 20px 0px ;">Tuotelista</h1>
@@ -10,7 +10,7 @@
             <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Tuotenimi</strong>&nbsp;- Hae nimellä tuotekoodin sijaan.</p><input type="text" style="width: 405px;margin-bottom: 20px;">
         </div>
     </div>
-{% endblock %}</div>
+{% endblock %}
 {% block productlist%}<div class="container">
     <div class="row product-list dev">
         <div class="col-sm-6 col-md-4 product-item animation-element slide-top-left">
