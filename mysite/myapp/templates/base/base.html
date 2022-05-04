@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="{%static 'assets/bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{%static 'assets/fonts/font-awesome.min.css' %}">
+    {% block prodliststyle %}{% endblock %}
     <link rel="stylesheet" href="{%static 'assets/css/Header-Dark.css' %}">
     <link rel="stylesheet" href="{%static 'assets/css/styles.css' %}">
 </head>
@@ -35,25 +36,12 @@
                 </div>
             </div>
         </nav>
-        <div class="container hero">
-            <div class="row">
-                <div class="col-md-8 offset-md-2" style="padding-top: 10px;font-family: 'Nunito Sans', sans-serif;color: rgb(255,255,255);">
-                    <h1 class="text-center" style="font-family: Kanit, sans-serif;font-weight: bold;">Tervetuloa Rasekon Lainaamoon</h1>
-                    <h1 class="fw-bold" style="font-size: 25px;font-family: 'Nunito Sans', sans-serif;margin: 20px 0px ;">Ohjeet Lainaamon käyttöön</h1>
-                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;"><strong>Uusi lainaus</strong>&nbsp;- Aloita uuden uloslainauksen kirjaus.</p>
-                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;"><strong>Palautus</strong>&nbsp;- Kirjaa lainassa ollut tuote palautetuksi.</p>
-                    <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;"><strong>Työkalut</strong>&nbsp;:<br></p>
-                    <ul style="color: rgb(255,255,255);">
-                        <li><strong>Listaa tuote varastoon</strong>&nbsp;- Lisää uusi tuote varastokirjanpitoon.</li>
-                        <li><strong>Tarkista lainaus</strong>&nbsp;- Katso tietyllä opiskelijanumerolla lainattujen tuotteiden tila.</li>
-                        <li><strong>Ylläpito</strong> - Korjaa virheellisiä merkintöjä ja muokkaa varastossa olevia tuotteita.<br></li>
-                    </ul>
-                    <p><strong>Tuotelista</strong>&nbsp;- Avaa lista kaikista varaston tuotteista.<br><br>&nbsp; &nbsp; Voit myös hakea tuotetta suoraan nimellä.</p>
-                </div>
-            </div>
+        <div class="container hero">{% block content %}{% endblock %}
         </div>
     </header>
     <script src="{%static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    {% block prodlistscript %}{% endblock %}
+    {% block maintremovescript %}{% endblock %}
 </body>
 
 </html>
