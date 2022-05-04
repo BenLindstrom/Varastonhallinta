@@ -11,7 +11,7 @@
         </div>
     </div>
 {% endblock %}</div>
-<div class="container">
+{% block productlist%}<div class="container">
     <div class="row product-list dev">
         <div class="col-sm-6 col-md-4 product-item animation-element slide-top-left">
             <div class="product-container">
@@ -539,5 +539,5 @@
             </div>
         </div>
     </div>
-</div>
+</div>{% endblock %}
 {% block prodlistscript %}<script src="{%static 'assets/js/Animated-Pretty-Product-List-v12.js' %}"></script>{% endblock %}
