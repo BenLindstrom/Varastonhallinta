@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="{%static 'assets/bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{%static 'assets/fonts/font-awesome.min.css' %}">
-    {% block prodliststyle %}{% endblock %}
+    {% block stylesheet %}{% endblock %}
     <link rel="stylesheet" href="{%static 'assets/css/Header-Dark.css' %}">
     <link rel="stylesheet" href="{%static 'assets/css/styles.css' %}">
 </head>
@@ -36,13 +36,10 @@
                 </div>
             </div>
         </nav>
-        <div class="container hero">{% block content %}{% endblock %}
-        </div>
-        {% block productlist%}{% endblock %}
+        {% block content %}{% endblock %}
     </header>
     <script src="{%static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
-    {% block prodlistscript %}{% endblock %}
-    {% block maintremovescript %}{% endblock %}
+    {% block script %}{% endblock %}
 </body>
 
 </html>
