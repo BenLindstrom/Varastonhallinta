@@ -1,23 +1,17 @@
+{% extends "../base/base.html" %}
 {% load  static %}
-<!DOCTYPE html>
-<html lang="fi">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Kirjautumisruutu</title>
-    
+{% block title %}Kirjaudu{% endblock %}
+{% block stylesheet %}
     <link rel="stylesheet" href="{%static 'registration/assets/bootstrap/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans&amp;display=swap">
     <link rel="stylesheet" href="{%static 'registration/assets/css/Login-Form-Dark.css' %} ">
     <link rel="stylesheet" href="{%static 'registration/assets/css/styles.css' %}">
-</head>
-
-
+{% endblock %}
+{% block body%}
 <body style="background: linear-gradient(144deg, #1b3259 0%, #df2070 64%, white 100%);background-repeat: no-repeat;background-attachment: fixed;">
     <section class="login-dark">
         <form method="post" style="background: rgba(27,50,89,0.63);">
             {% csrf_token %}
-            <div class="illustration"><img src="{%static 'registration/assets/img/clipboard-image-1.png' %}" style="height: 277px;"></div>
+            <div class="illustration"><img src="{%static 'registration/assets/img/raseko-pysty.png' %}" style="height: 277px;"></div>
             <div class="mb-3"><input class="form-control" type="text" name="username" placeholder="Käyttäjänimi" autofocus="" style="border-color: #0095b2;font-family: 'Nunito Sans', sans-serif;"></div>
             <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Salasana" style="border-color: #0095b2;font-family: 'Nunito Sans', sans-serif;"></div>
             <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit" style="--bs-primary-rgb: 223,32,112;background: #df2070;font-family: 'Nunito Sans', sans-serif;">Kirjaudu</button></div><a class="forgot" href="#" style="font-family: 'Nunito Sans', sans-serif;color:  #efefef;">Pyydä uutta salasanaa.</a>
@@ -25,4 +19,4 @@
     </section>
     <script src="{%static 'registration/assets/bootstrap/js/bootstrap.min.js' %}"></script>
 </body>
-</html>
+{% endblock %}
