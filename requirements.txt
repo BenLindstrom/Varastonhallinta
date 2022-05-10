@@ -9,3 +9,4 @@ SQLAlchemy==           1.4.35
 sqlparse==             0.4.2
 tzdata==               2022.1
 psycopg2==             2.9.3
+python-decouple==      3.6
