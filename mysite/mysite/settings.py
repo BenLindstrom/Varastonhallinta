@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
-from decouple import config
+#from decouple import config
 from pathlib import Path
 import os
 
@@ -23,7 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+# SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = 'django-insecure-#yc(p+1g4cup0q)gv866fzs&u*8bjvch3lbf%2zwq+&-u+&^sb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -84,12 +85,12 @@ DATABASES = {
         
     },
     
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Varastonhallinta', 
-        'USER': 'postgres', 
-        'PASSWORD': config('DBPASSWORD'),
-        'HOST': '127.0.0.1', 
-        'PORT': '5432',
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'NAME': 'Varastonhallinta', 
+        # 'USER': 'postgres', 
+        # 'PASSWORD': config('DBPASSWORD'),
+        # 'HOST': '127.0.0.1', 
+        # 'PORT': '5432',
     }
 
 
