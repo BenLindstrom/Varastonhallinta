@@ -8,5 +8,5 @@ setuptools==           58.1.0
 SQLAlchemy==           1.4.35
 sqlparse==             0.4.2
 tzdata==               2022.1
-psycopg2==             2.9.3
+psycopg2-binary==      2.9.3
 python-decouple==      3.6
