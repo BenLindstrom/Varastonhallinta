@@ -2,29 +2,244 @@
 {% block title %}Uusi tuote{% endblock %}
 {% block content %}
 <div class="container hero">
-    <div class="row">
-        <div class="col-md-8 offset-md-2" style="padding-top: 10px;font-family: 'Nunito Sans', sans-serif;color: rgb(255,255,255);">
-            <h1 class="fw-bold" style="font-size: 25px;font-family: 'Nunito Sans', sans-serif;margin: 20px 0px ;">Uusi tuote</h1>
-            <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Varasto</strong>&nbsp;- Valitse haluttu varasto listasta.</p>
-            <div class="dropdown"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="background: #df2070;margin-bottom: 20px;height: 36px;">Varasto&nbsp;</button>
-                <div class="dropdown-menu" style="margin-top: -17px;"><a class="dropdown-item" href="#">Varasto A</a><a class="dropdown-item" href="#">Varasto B<br></a><a class="dropdown-item" href="#">Varasto C<br></a><a class="dropdown-item" href="#">Varasto D<br></a></div>
-            </div>
-            <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Tuotekoodi</strong>&nbsp;- Lue viivakoodista tai kirjaa se käsin. Voit myös määritellä lukumäärän.</p><input type="text" style="margin-bottom: 20px;width: 243px;"><input type="text" style="margin-left: 16px;width: 58px;padding-left: 4px;" placeholder="Määrä">
-            <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Tuotenimi ja kuva</strong>&nbsp;- Anna tuotteelle nimi ja kuva.</p><input type="text" style="width: 405px;margin-bottom: 20px;"><img class="tuotekuva">
-            <p><button class="btn btn-primary" type="button" style="background: #1b3259;height: 33px;padding-top: 4px;">Lisää kuva</button><button class="btn btn-primary disabled" type="button" style="background: #1b3259;height: 33px;padding-top: 4px;margin-left: 20px;" disabled="">Poista kuva</button></p>
-            <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Tuotetyyppi</strong></p><input type="text" style="margin-bottom: 20px;width: 243px;">
-            <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Hankintapäivä</strong></p><input type="date" style="margin-bottom: 20px;">
-            <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Takuu päättyy</strong></p><input type="date" style="margin-bottom: 20px;">
-            <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Kustannuspaikka</strong></p><input type="text" style="margin-bottom: 20px;width: 243px;">
-            <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Hankintapaikka</strong></p><input type="text" style="margin-bottom: 20px;width: 243px;">
-            <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Hankintahinta</strong></p><input type="text" style="margin-bottom: 20px;width: 243px;">
-            <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Laskun numero</strong></p><input type="text" style="margin-bottom: 20px;width: 243px;">
-            <p><button class="btn btn-primary disabled" type="button" style="background: #1b3259;height: 33px;padding-top: 4px;" disabled="">Lisää</button></p>
-            <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Tuotelista</strong>&nbsp;- Varastoon listattavat uudet tuotteet.</p><textarea style="width: 405px;margin-bottom: 20px;" disabled="" readonly=""></textarea>
-            <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Lisätietoja</strong>&nbsp;- Vapaamuotoinen.</p><textarea style="width: 405px;height: 100px;"></textarea>
-            <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;">Tarkista tietojen oikeellisuus ja paina sitten "Kirjaa".<br>Kuitti voidaan tulostaa onnistuneen kirjauksen jälkeen.<br></p>
-            <p><button class="btn btn-primary" type="button" style="background: #df2070;">Kirjaa</button><button class="btn btn-primary disabled" type="button" style="background: #df2070;margin-left: 50px;" disabled="">Tulosta kuitti</button></p>
+  <div class="row">
+    <div
+      class="col-md-8 offset-md-2"
+      style="
+        padding-top: 10px;
+        font-family: 'Nunito Sans', sans-serif;
+        color: rgb(255, 255, 255);
+      "
+    >
+      <h1
+        class="fw-bold"
+        style="
+          font-size: 25px;
+          font-family: 'Nunito Sans', sans-serif;
+          margin: 20px 0px;
+        "
+      >
+        Uusi tuote
+      </h1>
+      <p
+        class="fw-light"
+        style="
+          color: rgb(255, 255, 255);
+          font-family: 'Nunito Sans', sans-serif;
+          margin-bottom: 10px;
+        "
+      >
+        <strong>Varasto</strong>&nbsp;- Valitse haluttu varasto listasta.
+      </p>
+      <div class="dropdown">
+        <button
+          class="btn btn-primary dropdown-toggle"
+          aria-expanded="false"
+          data-bs-toggle="dropdown"
+          type="button"
+          style="background: #df2070; margin-bottom: 20px; height: 36px"
+        >
+          Varasto
+        </button>
+        <div class="dropdown-menu" style="margin-top: -17px">
+          <a class="dropdown-item" href="#">Varasto A</a>
+          <a class="dropdown-item" href="#">Varasto B</a>
+          <a class="dropdown-item" href="#">Varasto C</a>
+          <a class="dropdown-item" href="#">Varasto D</a>
         </div>
+      </div>
+      <p
+        class="fw-light"
+        style="
+          color: rgb(255, 255, 255);
+          font-family: 'Nunito Sans', sans-serif;
+          margin-bottom: 10px;
+        "
+      >
+        <strong>Tuotekoodi</strong>&nbsp;- Lue viivakoodista tai kirjaa se
+        käsin. Voit myös määritellä lukumäärän.
+      </p>
+      <input type="text" style="margin-bottom: 20px; width: 243px" />
+      <input
+        type="text"
+        style="margin-left: 16px; width: 58px; padding-left: 4px"
+        placeholder="Määrä"
+      />
+      <p
+        class="fw-light"
+        style="
+          color: rgb(255, 255, 255);
+          font-family: 'Nunito Sans', sans-serif;
+          margin-bottom: 10px;
+        "
+      >
+        <strong>Tuotenimi ja kuva</strong>&nbsp;- Anna tuotteelle nimi ja kuva.
+      </p>
+      <input type="text" style="width: 405px; margin-bottom: 20px" />
+      <img class="tuotekuva" />
+      <p>
+        <button
+          class="btn btn-primary"
+          type="button"
+          style="background: #1b3259; height: 33px; padding-top: 4px"
+        >
+          Lisää kuva</button
+        ><button
+          class="btn btn-primary disabled"
+          type="button"
+          style="
+            background: #1b3259;
+            height: 33px;
+            padding-top: 4px;
+            margin-left: 20px;
+          "
+          disabled=""
+        >
+          Poista kuva
+        </button>
+      </p>
+      <p
+        class="fw-light"
+        style="
+          color: rgb(255, 255, 255);
+          font-family: 'Nunito Sans', sans-serif;
+          margin-bottom: 10px;
+        "
+      >
+        <strong>Tuotetyyppi</strong>
+      </p>
+      <input type="text" style="margin-bottom: 20px; width: 243px" />
+      <p
+        class="fw-light"
+        style="
+          color: rgb(255, 255, 255);
+          font-family: 'Nunito Sans', sans-serif;
+          margin-bottom: 10px;
+        "
+      >
+        <strong>Hankintapäivä</strong>
+      </p>
+      <input type="date" style="margin-bottom: 20px" />
+      <p
+        class="fw-light"
+        style="
+          color: rgb(255, 255, 255);
+          font-family: 'Nunito Sans', sans-serif;
+          margin-bottom: 10px;
+        "
+      >
+        <strong>Takuu päättyy</strong>
+      </p>
+      <input type="date" style="margin-bottom: 20px" />
+      <p
+        class="fw-light"
+        style="
+          color: rgb(255, 255, 255);
+          font-family: 'Nunito Sans', sans-serif;
+          margin-bottom: 10px;
+        "
+      >
+        <strong>Kustannuspaikka</strong>
+      </p>
+      <input type="text" style="margin-bottom: 20px; width: 243px" />
+      <p
+        class="fw-light"
+        style="
+          color: rgb(255, 255, 255);
+          font-family: 'Nunito Sans', sans-serif;
+          margin-bottom: 10px;
+        "
+      >
+        <strong>Hankintapaikka</strong>
+      </p>
+      <input type="text" style="margin-bottom: 20px; width: 243px" />
+      <p
+        class="fw-light"
+        style="
+          color: rgb(255, 255, 255);
+          font-family: 'Nunito Sans', sans-serif;
+          margin-bottom: 10px;
+        "
+      >
+        <strong>Hankintahinta</strong>
+      </p>
+      <input type="text" style="margin-bottom: 20px; width: 243px" />
+      <p
+        class="fw-light"
+        style="
+          color: rgb(255, 255, 255);
+          font-family: 'Nunito Sans', sans-serif;
+          margin-bottom: 10px;
+        "
+      >
+        <strong>Laskun numero</strong>
+      </p>
+      <input type="text" style="margin-bottom: 20px; width: 243px" />
+      <p>
+        <button
+          class="btn btn-primary disabled"
+          type="button"
+          style="background: #1b3259; height: 33px; padding-top: 4px"
+          disabled=""
+        >
+          Lisää
+        </button>
+      </p>
+      <p
+        class="fw-light"
+        style="
+          color: rgb(255, 255, 255);
+          font-family: 'Nunito Sans', sans-serif;
+          margin-bottom: 10px;
+        "
+      >
+        <strong>Tuotelista</strong>&nbsp;- Varastoon listattavat uudet tuotteet.
+      </p>
+      <textarea
+        style="width: 405px; margin-bottom: 20px"
+        disabled=""
+        readonly=""
+      ></textarea>
+      <p
+        class="fw-light"
+        style="
+          color: rgb(255, 255, 255);
+          font-family: 'Nunito Sans', sans-serif;
+          margin-bottom: 10px;
+        "
+      >
+        <strong>Lisätietoja</strong>&nbsp;- Vapaamuotoinen.
+      </p>
+      <textarea style="width: 405px; height: 100px"></textarea>
+      <p
+        class="fw-light"
+        style="
+          color: rgb(255, 255, 255);
+          font-family: 'Nunito Sans', sans-serif;
+          margin-bottom: 10px;
+        "
+      >
+        Tarkista tietojen oikeellisuus ja paina sitten "Kirjaa".<br />Kuitti
+        voidaan tulostaa onnistuneen kirjauksen jälkeen.
+      </p>
+      <p>
+        <button
+          class="btn btn-primary"
+          type="button"
+          style="background: #df2070"
+        >
+          Kirjaa
+        </button>
+        <button
+          class="btn btn-primary disabled"
+          type="button"
+          style="background: #df2070; margin-left: 50px"
+          disabled=""
+        >
+          Tulosta kuitti
+        </button>
+      </p>
     </div>
+  </div>
 </div>
 {% endblock %}

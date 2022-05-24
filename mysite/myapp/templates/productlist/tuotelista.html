@@ -1,544 +1,938 @@
 {% extends "../base/baseforpages.html" %}
-{% load  static %}
+{% load static %}
 {% block title %}Tuotelista{% endblock %}
-{% block stylesheetpages %}<link rel="stylesheet" href="{%static 'assets/css/Animated-Pretty-Product-List-v12.css' %}">{% endblock %}
+{% block stylesheetpages %}
+<link
+  rel="stylesheet"
+  href="{%static 'assets/css/Animated-Pretty-Product-List-v12.css' %}"
+/>
+{% endblock %}
 {% block content %}
 <div class="container hero">
-    <div class="row">
-        <div class="col-md-8 offset-md-2" style="padding-top: 10px;font-family: 'Nunito Sans', sans-serif;color: rgb(255,255,255);">
-            <h1 class="fw-bold" style="font-size: 25px;font-family: 'Nunito Sans', sans-serif;margin: 20px 0px ;">Tuotelista</h1>
-            <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Tuotekoodi</strong>&nbsp;- Lue viivakoodista tai kirjaa se käsin.</p><input type="text" style="margin-bottom: 20px;width: 243px;">
-            <p class="fw-light" style="color: rgb(255,255,255);font-family: 'Nunito Sans', sans-serif;margin-bottom: 10px;"><strong>Tuotenimi</strong>&nbsp;- Hae nimellä tuotekoodin sijaan.</p><input type="text" style="width: 405px;margin-bottom: 20px;">
-        </div>
+  <div class="row">
+    <div
+      class="col-md-8 offset-md-2"
+      style="
+        padding-top: 10px;
+        font-family: 'Nunito Sans', sans-serif;
+        color: rgb(255, 255, 255);
+      "
+    >
+      <h1
+        class="fw-bold"
+        style="
+          font-size: 25px;
+          font-family: 'Nunito Sans', sans-serif;
+          margin: 20px 0px;
+        "
+      >
+        Tuotelista
+      </h1>
+      <p
+        class="fw-light"
+        style="
+          color: rgb(255, 255, 255);
+          font-family: 'Nunito Sans', sans-serif;
+          margin-bottom: 10px;
+        "
+      >
+        <strong>Tuotekoodi</strong>&nbsp;- Lue viivakoodista tai kirjaa se
+        käsin.
+      </p>
+      <input type="text" style="margin-bottom: 20px; width: 243px" />
+      <p
+        class="fw-light"
+        style="
+          color: rgb(255, 255, 255);
+          font-family: 'Nunito Sans', sans-serif;
+          margin-bottom: 10px;
+        "
+      >
+        <strong>Tuotenimi</strong>&nbsp;- Hae nimellä tuotekoodin sijaan.
+      </p>
+      <input type="text" style="width: 405px; margin-bottom: 20px" />
     </div>
-<div class="productlist">
+  </div>
+  <div class="productlist">
     <div class="row product-list dev">
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-top-left">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
-                </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-top-left"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
             </div>
-        </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-rotate-clockwise">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
-                </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
             </div>
-        </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-top-right">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
                 </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
                 </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-fade-slow">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
-                </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-rotate-clockwise"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
             </div>
-        </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-fade">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
-                </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
             </div>
-        </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-fade-xslow">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
                 </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
                 </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-left">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
-                </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-top-right"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
             </div>
-        </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-top">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
-                </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
             </div>
-        </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-right">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
                 </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
                 </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-bottom-left">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
-                </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-fade-slow"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
             </div>
-        </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-bottom">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
-                </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
             </div>
-        </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-bottom-right">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
                 </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
                 </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-rotate-clockwise-180">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
-                </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="col-sm-6 col-md-4 product-item animation-element slide-fade">
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
             </div>
-        </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-rotate-counterclockwise">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
-                </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
             </div>
-        </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-rotate-counterclockwise-180">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
                 </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
                 </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-right-rotate-counterclockwise">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
-                </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-fade-xslow"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
             </div>
-        </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-flip-x">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
-                </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
             </div>
-        </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-left-rotate-clockwise">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
                 </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
                 </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-right-flip-x-y">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
-                </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="col-sm-6 col-md-4 product-item animation-element slide-left">
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
             </div>
-        </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-flip-y">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
-                </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
             </div>
-        </div>
-        <div class="col-sm-6 col-md-4 product-item animation-element slide-left-flip-x-y">
-            <div class="product-container">
-                <div class="row">
-                    <div class="col-md-12"><a class="product-image" href="#"><img src="{%static 'assets/img/iphone6.jpg' %}"></a></div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
                 </div>
-                <div class="row">
-                    <div class="col-8">
-                        <h2><a href="#">iPhone 6s</a></h2>
-                    </div>
-                    <div class="col-4"><a class="small-text" href="#">compare </a></div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
                 </div>
-                <div class="product-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i><a class="small-text" href="#">82 reviews</a></div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-light" type="button">Buy Now!</button></div>
-                            <div class="col-6">
-                                <p class="product-price">$599.00 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="col-sm-6 col-md-4 product-item animation-element slide-top">
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
+            </div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
+                </div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 product-item animation-element slide-right">
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
+            </div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
+                </div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-bottom-left"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
+            </div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
+                </div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-bottom"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
+            </div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
+                </div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-bottom-right"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
+            </div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
+                </div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-rotate-clockwise-180"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
+            </div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
+                </div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-rotate-counterclockwise"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
+            </div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
+                </div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-rotate-counterclockwise-180"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
+            </div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
+                </div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-right-rotate-counterclockwise"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
+            </div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
+                </div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-flip-x"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
+            </div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
+                </div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-left-rotate-clockwise"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
+            </div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
+                </div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-right-flip-x-y"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
+            </div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
+                </div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-flip-y"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
+            </div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
+                </div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-md-4 product-item animation-element slide-left-flip-x-y"
+      >
+        <div class="product-container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="product-image" href="#">
+                <img src="{%static 'assets/img/iphone6.jpg' %}"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <h2><a href="#">iPhone 6s</a></h2>
+            </div>
+            <div class="col-4"><a class="small-text" href="#">compare</a></div>
+          </div>
+          <div class="product-rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star-half"></i
+            ><a class="small-text" href="#">82 reviews</a>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare sem sed nisl dignissim, facilisis dapibus lacus
+                vulputate. Sed lacinia lacinia magna.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-light" type="button">Buy Now!</button>
+                </div>
+                <div class="col-6">
+                  <p class="product-price">$599.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  {% endblock %}
+  {% block script %}
+  <script src="{%static 'assets/js/Animated-Pretty-Product-List-v12.js' %}"></script>
+  {% endblock %}
 </div>
-{% endblock %}
-{% block script %}<script src="{%static 'assets/js/Animated-Pretty-Product-List-v12.js' %}"></script>{% endblock %}
