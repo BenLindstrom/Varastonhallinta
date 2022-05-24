@@ -24,6 +24,8 @@ def uusituote(request):
 
 @login_required
 def tuotelista(request):
+    search = request.GET.get('search')
+#   tuotteet = Tuote.objects.filter(nimi__icontains=search)
     return render(request, 'productlist/tuotelista.html')
 
 @login_required
